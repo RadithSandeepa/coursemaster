@@ -1,0 +1,138 @@
+@import "../../responsive.scss";
+
+.profile{
+    display: flex;
+
+    .right{
+        flex: 6;
+        overflow-y: auto;
+
+        .box{
+           display: flex;
+           margin-top: 32px;
+
+
+           @include md{
+                flex-direction: column;
+                gap: 32px
+           }
+
+            .leftbox{
+                flex: 1;
+
+                .wrapper{
+                    display: flex;
+                    flex-direction: column;
+
+                    .title{
+                        display: flex;
+                        justify-content: center;
+                        gap: 12px;
+                        align-items: center;
+                        padding-left: 32px;
+
+                        .btnContainer{
+                            color: green;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .info{
+                        margin-top: 42px;
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 62px;
+                        //align-items: center;
+                        justify-content: center;
+                        gap: 32px;
+                        font-size: 18px;
+                    }
+
+                    .password-field{
+                        margin-top: 32px;
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 62px;
+                        gap: 12px;
+                      
+                        input{
+                            width: 50%;
+                            padding: 15px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+    
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+
+                        button{
+                            width: 200px;
+                            padding: 15px;
+                            //border-radius: 12px;
+                            font-weight: bold;
+                            border: none;
+                            background-color: #fece51;
+                            cursor: pointer;
+                            transition: all 0.4s ease;
+        
+                            &:hover{
+                                scale: 1.05;
+                            }
+                        }
+
+                    }
+                }
+                
+            }
+
+            .rightbox{
+                flex: 1;
+
+                .title{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    @include md{
+                        justify-content: center;
+                        gap: 22px
+                   }
+
+                    h1{
+                        font-weight: 400;
+                    }
+
+                    .btnContainer{
+                        color: blue;
+                        cursor: pointer;
+                        padding-right: 22px;
+                    }
+
+
+                }
+
+                .notifications{
+                    display: flex;
+                    //border: 2px solid red;
+                    height: 70vh;
+                    flex-direction: column;
+                    gap: 12px;
+                    margin-top: 32px;
+                    overflow-y: auto;
+
+                    @include md{
+                        align-items: center;
+                        gap: 22px
+                   }
+                  
+
+
+                }
+              
+            }
+        }
+       
+    }
+
+}

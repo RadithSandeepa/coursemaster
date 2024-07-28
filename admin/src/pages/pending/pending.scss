@@ -1,0 +1,9 @@
+@import "../../responsive.scss";
+
+.pending{
+    display: flex;
+
+    .pending-container{
+        flex: 6;
+    }
+}

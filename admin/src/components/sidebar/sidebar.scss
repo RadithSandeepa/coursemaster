@@ -1,0 +1,53 @@
+@import "../../responsive.scss";
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    background-color: #fcf5f3;
+    height: 100vh;
+    z-index: 1000;
+
+    @include md{
+        display: none;
+        z-index: 1;
+    }
+   
+
+    .logo{
+        display: flex;
+        height: 100px;
+        font-weight: bold;
+        font-size: 20px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+       
+        
+        img{
+            width: 28px;
+        }
+    }
+
+    .menu{
+        padding-top: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        .menuItem{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding-left: 40px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #fece51;
+                border-radius: 5px;
+            }
+        }
+    }
+}

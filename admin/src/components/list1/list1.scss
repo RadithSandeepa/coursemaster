@@ -1,0 +1,24 @@
+.list1{
+    margin-top: 18px;
+    padding: 15px;
+    width: 98%;
+    //min-width: 500px;
+    //overflow-x: auto;
+   
+    .btns{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        .edit{
+            color: green;
+            cursor: pointer;
+            
+        }
+
+        .delete{
+            color: red;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.singleenrollment{
+    display: flex;
+    position: relative;
+
+    .right{
+        flex: 6;
+        overflow-y: auto;
+
+        .container{
+            height: calc(100vh - 100px);
+            padding: 20px;
+
+            h1{
+                display: flex;
+                justify-content: center;
+                margin-top: 22px;
+            }
+
+            .content{
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                margin-top: 22px;
+                width: 70%;
+                margin-left: 40px;
+
+                h3{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+
+}

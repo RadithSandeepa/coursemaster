@@ -1,0 +1,20 @@
+.addcontent{
+    display: flex;
+
+    .right{
+        flex: 6;
+
+        .box{
+            display: flex;
+            margin-top: 32px;
+
+            .leftbox{
+                flex: 1;
+            }
+
+            .rightbox{
+                flex: 1;
+            }
+        }
+    }
+}

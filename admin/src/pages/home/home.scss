@@ -1,0 +1,30 @@
+@import "../../responsive.scss";
+
+.home{
+    display: flex;
+
+    .right{
+        flex: 6;
+        overflow-y: auto;
+
+    .content{
+        padding-left: 30px;
+        height: calc(100vh - 75px);
+      
+        @include md{  
+            overflow-y: scroll;
+         }
+
+        h1{
+            padding-left: 15px;
+            margin-top: 22px;
+        }
+
+        .title{
+            padding-left: 15px;
+            margin-top: 42px;
+            font-weight: 400;
+        }
+    }
+    }
+}

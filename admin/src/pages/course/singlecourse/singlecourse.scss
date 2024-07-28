@@ -1,0 +1,95 @@
+.singlecourse{
+    display: flex;
+    position: relative;
+
+    .dropdown{
+        //border: 2px solid red;
+        position: absolute;
+        top: 130px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        padding: 8px;
+
+        select{
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            //border-radius: 5px;
+
+            &:focus{
+                outline: none;
+            }
+
+        }
+
+        .btn{
+            padding: 8px;
+            font-weight: bold;
+            border: none;
+            background-color: #fece51;
+            cursor: pointer;
+            transition: all 0.4s ease;
+
+            &:hover{
+                scale: 1.05;
+            }
+        }
+
+    }
+
+    .right{
+        flex: 6;
+        overflow-y: auto;
+
+        .container{
+            height: calc(100vh - 100px);
+            padding: 20px;
+
+            .btns{
+                //border: 2px solid green;
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+                padding-right: 22px;
+
+               
+
+                    .btnContainer{
+                        .edit{
+                            cursor: pointer;
+                            color: rgba(0, 128, 0, 0.76);
+                        }
+    
+                        .assign{
+                            color: rgba(0, 0, 255, 0.76);
+                            cursor: pointer;
+                        }
+                    }
+                   
+            }
+
+            h1{
+                display: flex;
+                justify-content: center;
+                margin-top: 22px;
+            }
+
+            .content{
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                margin-top: 22px;
+                width: 70%;
+                margin-left: 40px;
+
+                h3{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+
+}

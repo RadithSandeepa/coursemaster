@@ -1,0 +1,26 @@
+.card{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    padding: 30px;
+    border-radius: 12px;
+    color: #333;
+
+    .left, .right{
+        flex: 1;
+
+    }
+
+    .right{
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+}

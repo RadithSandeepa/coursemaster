@@ -1,0 +1,103 @@
+@import "../../responsive.scss";
+
+.navbar{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+    font-weight: bold;
+    position: relative;
+
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        //border: 2px solid red;
+
+      
+
+        .icon{
+            cursor: pointer;
+
+            @include md{
+                display: none;
+            }
+
+        }
+    }
+
+    .menuIcon{
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+
+        img{
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+        }
+
+        @include md{
+            display: inline;
+        }
+    }
+
+    .menu{
+            position: absolute;
+            top: 0;
+            left: -50%;
+            background-color: black;
+            color: white;
+            height: 100vh;
+            width: 230px;
+            //transition: all 1s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+
+            &.active{
+                z-index: 500;
+                left: 0;
+            }
+
+            @include sm{
+                a{
+                    display: initial;
+                    padding: 20px;
+                }
+            }
+    }
+
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+        height: 100%;
+        padding-right: 22px;
+
+
+        .profile{
+            padding: 12px 40px;
+            background-color: #fece51;
+            cursor: pointer;
+            border: none;
+            transition: all 0.4s ease;
+            overflow-y: hidden;
+    
+            &:hover{
+                scale: 1.05;
+            }
+            
+    
+        }
+    }
+
+   
+}

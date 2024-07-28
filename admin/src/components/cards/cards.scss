@@ -1,0 +1,17 @@
+@import "../../responsive.scss";
+
+.cards{
+    display: flex;
+    gap: 10px;
+    //border: 2px solid red;
+    margin: 42px 15px;
+
+    @include md{
+        flex-direction: column;
+    }
+
+
+    .parentContainer{
+        width: 100%;
+    }
+}

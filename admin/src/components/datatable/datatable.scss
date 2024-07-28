@@ -1,0 +1,65 @@
+@import "../../responsive.scss";
+
+.datatable{
+    position: relative;
+    width: 100%;
+
+    .skeleton{
+        padding: 15px;
+    }
+
+    .add-container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .add{
+            color: green;
+            margin-right: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .container{
+        width: 100%;
+        
+        .table{
+            padding: 15px;
+            height: 100vh;
+            overflow-x: scroll;
+            min-width: fit-content;
+           
+            .btns{
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                //justify-content: space-evenly;
+                
+        
+                .edit{
+                    color: blue;
+                    cursor: pointer;
+    
+                    &:hover{
+                        color: rgba(0, 0, 255, 0.736);
+                    }
+                    
+                }
+        
+                .delete{
+                    color: red;
+                    cursor: pointer;
+    
+                    &:hover{
+                        color: rgba(255, 0, 0, 0.736);
+                    }
+                }
+            }
+        }
+        
+    }
+
+   
+
+ 
+}
