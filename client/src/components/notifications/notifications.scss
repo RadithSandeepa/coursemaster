@@ -1,0 +1,14 @@
+.notifications-alert{
+    background-color: white;
+    padding: 20px;
+    //border: 2px solid red;;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+
+    .title{
+        font-weight: bold;
+    }
+    
+}

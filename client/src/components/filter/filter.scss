@@ -1,0 +1,70 @@
+@import "../../responsive.scss";
+
+.filter{
+    h1{
+        font-weight: 300;
+        font-size: 24px;
+    }
+
+    .type{
+        button{
+            margin-top: 22px;
+            padding: 8px 12px;
+            border: 1px solid #999;
+            cursor: pointer;
+            background-color: white;
+            border-bottom: none;
+
+
+            &.active{
+                background-color: black;
+                color: white
+            }
+
+            &:first-child{
+                border-top-left-radius: 5px;
+                //border-right: none;
+            }
+
+            &:last-child{
+                border-top-right-radius: 5px;
+                border-left: none;
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        border: 1px solid #999;
+        width: 70%;
+
+        input{
+            flex: 6;
+            padding: 13px;
+            border: none;
+
+            &:focus{
+                outline: none;
+            }
+
+        }
+
+        button{
+            flex: 1;
+            border: none;
+            background-color: #fece51;
+            cursor: pointer;
+            padding: 12px 0px;
+
+            @include sm{
+                flex: 2;
+            }
+
+            img{
+                width: 24px;
+                height: 24px;
+                
+            }
+        }
+    }
+}
